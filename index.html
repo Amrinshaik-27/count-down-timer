@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(196, 230, 241);
+            margin-top: 200px;
+        }
+        .container{
+            border: 1px solid paleturquoise;
+            width: 400px;
+            padding:10px;
+            background-color: #8686AC;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #8686AC;
+        }
+        h2{
+            text-align: center;
+            color: white;
+        }
+        input{
+            width: 350px;
+            padding: 10px;
+            border: 1px solid ghostwhite;
+            border-radius: 5px;
+
+        }
+        button{
+            background-color:white;
+            margin-top: 17px;
+            display: inline-block;
+        }
+        #startBtn{
+        
+            border: 1px solid white;
+            padding: 9px;
+            width: 80px;
+            border-radius: 5px;
+        }
+        #resetBtn{
+           
+            border: 1px solid white;
+            padding: 9px;
+            width: 80px;
+            border-radius: 5px;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Countdown timer</h2>
+        <input type="number" id="timeInput" placeholder="Enter seconds" min="1"><br>
+        <button id="startBtn">Start</button>
+        <button  id="resetBtn"> Reset</button>
+        <h1 id="countdown">00:00</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
